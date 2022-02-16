@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          name: maciej-irl/wate
+          repository: maciej-irl/wate
           lfs: true
 
       - name: Install and Build
