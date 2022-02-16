@@ -1,5 +1,9 @@
 # Wordy
 
+[![Build and Deploy](https://github.com/maciej-irl/wordy/actions/workflows/main.yml/badge.svg)](https://github.com/maciej-irl/wordy/actions/workflows/main.yml)
+
+![Wordy - Open Source Wordle](share.png)
+
 > musi Wate pi toki Inli.
 
 [Wordy](https://wordy.maciej.ie) is an open source clone of
