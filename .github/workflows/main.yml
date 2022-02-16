@@ -1,0 +1,32 @@
+name: Build and Deploy
+concurrency: ci-${{ github.ref }}
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  repository_dispatch:
+    types: [build-and-deploy]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          name: maciej-irl/wate
+          lfs: true
+
+      - name: Install and Build
+        run: |
+          echo '{"wordy": true}' > static/config.json
+          npm ci
+          npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        with:
+          branch: gh-pages
+          folder: build
