@@ -4,7 +4,7 @@
 
 [Wordy](https://wordy.maciej.ie) is an open source clone of
 [Wordle](https://www.nytimes.com/games/wordle/index.html).
-Play it at [wordy.maciej.ie](https://wordy.maciej.ie).
+Play it on [wordy.maciej.ie](https://wordy.maciej.ie).
 
 Wordy is based on my project [Wate](https://github.com/maciej-irl/wate) -
 a Toki Pona version of Wordle. This repository's only job is to automatically
