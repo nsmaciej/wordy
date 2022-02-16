@@ -4,6 +4,7 @@ concurrency: ci-${{ github.ref }}
 on:
   push:
     branches: [main]
+    paths: [".github/**"]
   workflow_dispatch:
   repository_dispatch:
     types: [build-and-deploy]
@@ -11,7 +12,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - name: Checkout
         uses: actions/checkout@v2
