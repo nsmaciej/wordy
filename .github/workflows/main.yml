@@ -21,7 +21,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          echo '{"wordy": true}' > static/config.json
+          echo '{"wordy": true}' > src/config.json
           npm ci
           npm run build
 
